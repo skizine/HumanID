@@ -2,6 +2,7 @@
 
 $humanController = new HumanController();
 $humanText = $humanController->generateQuestion();
+header('Content-Type: application/json; charset=utf-8');
 echo $humanText;
 flush();
 
